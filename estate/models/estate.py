@@ -1,17 +1,29 @@
 from odoo import fields, models
 
+
 class Estate(models.Model):
     _name = "estate"
     _description = "Test test_model Estate"
 
-    name = fields.Char(required=True, default="Unknown0")
-    action = fields.Char(required=True, default="Unknown1")
-    action1 = fields.Char(required=True, default="Unknown2")
-    action2 = fields.Char(required=True, default="Unknown3")
-    action3 = fields.Char(required=True, default="Unknown4")
-    action4 = fields.Char(required=True, default="Unknown5")
-    action5 = fields.Char(required=True, default="Unknown6")
-    action6 = fields.Char(required=True, default="Unknown7")
-    action7 = fields.Char(required=True, default="Unknown8")
-    action8 = fields.Char(required=True, default="Unknown9")
-    action9 = fields.Char(required=True, default="Unknown99")
+    name = fields.Char(string="Title",required=True, default="Your new house")
+    Description = fields.Char(default="Description")
+    Postcode = fields.Char(required=True, default="Unknown2")
+    Expected_Price = fields.Integer(required=True, default="100500")
+    Bedrooms = fields.Integer(required=True, default="2")
+    Facades = fields.Char(required=True, default="Unknown5")
+    Garden = fields.Boolean(default=False)
+    Garden_Orientation = fields.Char(required=True, default="Unknown7")
+    Active = fields.Boolean(default=False)
+    Avalible_From = fields.Datetime(string="Avalible_From",copy=False, default=fields.Datetime.now)
+    Selling_Price = fields.Integer(required=True, readonly=True, copy=False, default="100500")
+    Living_Area = fields.Integer(string="Living_Area(sqm)", required=True, default="0")
+    Garage = fields.Boolean(default=False)
+    Garage_Area = fields.Integer(string="Living_Area(sqm)", required=True, default="0")
+    Status = fields.Char(required=True, default="Unknown99")
+    print(fields.Datetime.now())
+
+
+    # service_type = fields.Selection(string="Service Type", selection=[
+    #     ("mobilised", "Mobilised"),
+    #     ("contract", "Contract"),
+    #     ("regular", "Regular")])
