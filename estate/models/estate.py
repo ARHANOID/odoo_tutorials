@@ -1,8 +1,8 @@
 from odoo import fields, models
 
-class TestModel(models.Model):
-    _name = "test_model"
-    _description = "Test test_model Model"
+class Estate(models.Model):
+    _name = "estate"
+    _description = "Test test_model Estate"
 
     name = fields.Char(required=True, default="Unknown0")
     action = fields.Char(required=True, default="Unknown1")

@@ -14,7 +14,9 @@
     'category': 'Tutorials/estate',
     'installable': True,
     'depends': ['web', 'base'],
-    'data': [
+    'data': ["security/ir.model.access.csv",
+		"views/estate_views.xml",
+	"views/menus.xml",
 
     ],
     'assets': {
