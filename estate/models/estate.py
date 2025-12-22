@@ -23,6 +23,9 @@ class Estate(models.Model):
     print(fields.Datetime.now())
 
 
+
+    def action_od_button(self):
+        print("Estate first_od_button")
     # service_type = fields.Selection(string="Service Type", selection=[
     #     ("mobilised", "Mobilised"),
     #     ("contract", "Contract"),
