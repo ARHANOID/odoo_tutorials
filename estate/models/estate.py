@@ -20,7 +20,7 @@ class Estate(models.Model):
     Garage = fields.Boolean(default=False)
     Garage_Area = fields.Integer(string="Living_Area(sqm)", required=True, default="0")
     Status = fields.Char(required=True, default="Unknown99")
-    print(fields.Datetime.now())
+    print(fields.Datetime.now("6000"),fields.Datetime.now())
 
 
 
