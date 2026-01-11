@@ -1,0 +1,24 @@
+<odoo>
+ <record id="estate_action1" model="ir.actions.act_window">
+    <field name="name">Estate1</field>
+    <field name="res_model">estate</field>
+    <field name="view_mode">list,form,kanban</field>
+ </record>
+        <record id="estate1_view_list" model="ir.ui.view">
+        <field name="name">estate1.list</field>
+        <field name="model">estate</field>
+        <field name="arch" type="xml">
+            <list string="Channel" editable="bottom">
+                <field name="name"/>
+                <field name="Postcode"/>
+                <field name="Bedrooms"/>
+                <field name="Living_Area"/>
+                <field name="Expected_Price"/>
+                <field name="Selling_Price"/>
+                <field name="Avalible_From"/>
+            </list>
+        </field>
+            </record>
+
+
+</odoo>

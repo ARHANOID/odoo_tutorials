@@ -20,12 +20,16 @@ class Estate(models.Model):
     Garage = fields.Boolean(default=False)
     Garage_Area = fields.Integer(string="Living_Area(sqm)", required=True, default="0")
     Status = fields.Char(required=True, default="Unknown99")
+    # Serviceman_id = fields.Many2one('ashura.profiles.profile', 'name')
+
     print(fields.Datetime.now("6000"),fields.Datetime.now())
 
 
 
     def action_od_button(self):
         print("Estate first_od_button")
+
+
     # service_type = fields.Selection(string="Service Type", selection=[
     #     ("mobilised", "Mobilised"),
     #     ("contract", "Contract"),

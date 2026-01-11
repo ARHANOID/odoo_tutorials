@@ -16,6 +16,12 @@
     'depends': ['web', 'base'],
     'data': ["security/ir.model.access.csv",
 		"views/estate_views.xml",
+
+
+"views/estate1_views.xml",
+"views/estate0_views.xml",
+
+
 	"views/menus.xml",
 
     ],

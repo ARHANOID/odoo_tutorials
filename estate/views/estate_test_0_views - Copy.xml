@@ -10,7 +10,7 @@
 
         <!-- You can also inherit web.assets_frontend for website/frontend styles -->
     </data>
- <record id="estate_action" model="ir.actions.act_window">
+ <record id="estate_action0" model="ir.actions.act_window">
     <field name="name">Estate</field>
     <field name="res_model">estate</field>
     <field name="view_mode">list,form,kanban</field>
