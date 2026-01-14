@@ -21,6 +21,7 @@ class Estate(models.Model):
     Garage_Area = fields.Integer(string="Living_Area(sqm)", required=True, default="0")
     Status = fields.Char(required=True, default="Unknown99")
     # Serviceman_id = fields.Many2one('ashura.profiles.profile', 'name')
+    custom_image = fields.Image(string="Custom Image", attachment=True, max_width=256, max_height=256)
 
     print(fields.Datetime.now("6000"),fields.Datetime.now())
 

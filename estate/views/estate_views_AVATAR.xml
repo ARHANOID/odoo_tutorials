@@ -1,0 +1,39 @@
+<odoo>
+    <record id="ashura_profiles_achievements_action" model="ir.actions.act_window">
+        <field name="name">Achievements</field>
+        <field name="res_model">ashura.profiles.achievements</field>
+        <field name="view_mode">list,form,kanban</field>
+    </record>
+    <record id="ashura_profiles_achievements_kanban" model="ir.ui.view">
+        <field name="name">estate.kanban</field>
+        <field name="model">estate</field>
+        <field name="arch" type="xml">
+            <kanban class="o_hr_employee_kanban" sample="1">
+                <field name="id"/>
+
+                <field name="custom_image" widget="image" optional="show"/>
+                <field name="name"/>
+                <templates>
+                    <sheet>
+                        <group>
+                            <!-- Use the field name defined in the Python model -->
+                            <field name="custom_image" widget="image" class="oe_avatar"/>
+
+                            <!-- Add other fields as needed -->
+                            <field name="name"/>
+                        </group>
+                    </sheet>
+                    <t t-name="kanban-box">
+                         <group>
+                            <!-- Use the field name defined in the Python model -->
+                            <field name="custom_image" widget="image" class="oe_avatar"/>
+
+                            <!-- Add other fields as needed -->
+                            <field name="name"/>
+                        </group>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+</odoo>
